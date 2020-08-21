@@ -1,0 +1,30 @@
+:root {
+    font-size: 60%;
+    --color-vermelho-escuro: #780404;
+    --color-vermelho-claro: #E80707;
+    --color-vermelho-marrom: #692323;
+    --color-text: #dadada;
+    --color-text-hover: #f3f3f3;
+    --color-button: #420000;
+    --color-button-hover: #460c0c;
+    --background-image: background-image: url('images/bg-01.png');
+    --backgrond-gradient: linear-gradient(227deg, rgba(131, 20, 20, 1) 18%, rgba(70, 12, 12, 1) 53%, rgba(0, 0, 0, 1) 79%);
+    --background-gradient-secondary: radial-gradient(circle, rgba(70, 12, 12, 1) 15%, rgba(0, 0, 0, 1) 85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+input,
+button {
+    color: var(--color-text);
+}
+
+body {
+    background: var(--background-gradient-secondary);
+}
