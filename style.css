@@ -1,0 +1,112 @@
+:root {
+    font-size: 60%;
+    --color-vermelho-escuro: #780404;
+    --color-vermelho-claro: #E80707;
+    --color-vermelho-marrom: #692323;
+    --color-text: #dadada;
+    --color-text-hover: #f3f3f3;
+    --color-button: #420000;
+    --color-button-hover: #460c0c;
+    --background-image: background-image: url('images/bg-01.png');
+    --backgrond-gradient: linear-gradient(227deg, rgba(131, 20, 20, 1) 18%, rgba(70, 12, 12, 1) 53%, rgba(0, 0, 0, 1) 79%);
+    --background-gradient-secondary: radial-gradient(circle, rgba(70, 12, 12, 1) 15%, rgba(0, 0, 0, 1) 85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+input,
+button {
+    color: var(--color-text);
+}
+
+#page-login {
+    background: var(--background-gradient-secondary);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    background: var(--backgrond-gradient);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.4rem;
+}
+
+.container h1 {
+    font: 700 3rem Poppins;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.container a {
+    font: 700 1.6rem Archivo;
+    align-self: center;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color .2s;
+    margin-top: 1.6rem;
+}
+
+.container a:hover {
+    color: var(--color-text-hover);
+}
+
+.container button {
+    font: 700 2rem Archivo;
+    width: 50%;
+    height: 4.6rem;
+    margin: 2rem auto;
+    background: var(--color-button);
+    border: none;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.container button:hover {
+    background: var(--color-button-hover);
+}
+
+.container .input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .input-block label {
+    font: 700 2.4rem Archivo;
+}
+
+.container .input-block input {
+    font: 400 1.6rem Archivo;
+    margin: 1rem auto;
+    width: 100%;
+    height: 4rem;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--color-text);
+    outline: none;
+}
+
+.container .input-block+.input-block {
+    margin-top: 2rem;
+}
+
+@media (min-width: 1100px) {
+    #page-login {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 50rem;
+    }
+}
