@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GP - Gerenciamento de patrimônio</title>
+    <script src="functions.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/partials/menu.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/resultado_pesquisa.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <div class="menu">
+            <ul>
+                <a href="#">
+                    <li>Cadastrar equipamento</li>
+                </a>
+                <a href="#">
+                    <li>Pesquisa avançada</li>
+                </a>
+                <a href="#">
+                    <li>Alterar senha</li>
+                </a>
+                <a href="#">
+                    <li>Sair</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-resultado">
+        <form class="container">
+            <h1>SF241524</h1>
+            <div class="input-block">
+                <label for="equipamento">Equipamento:</label>
+                <input type="text" name="equipamento" id="equipamento" value="Notebook" disabled>
+            </div>
+            <div class="input-block">
+                <label for="marca">Marca:</label>
+                <input type="text" name="marca" id="marca" value="Daten" disabled>
+            </div>
+            <div class="input-block">
+                <label for="ua">UA:</label>
+                <input type="text" name="ua" id="ua" value="333423423- Milton" disabled>
+            </div>
+            <div class="input-block">
+                <label for="usuario">Usuário:</label>
+                <input type="text" name="usuario" id="usuario" value="cfomarques" disabled>
+            </div>
+            <footer>
+                <button>Editar</button>
+                <button onclick="voltar()">Voltar</button>
+                <button class="desativar">desativar</button>
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>
