@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/partials/menu.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/resultado_pesquisa.css">
+    <link rel="stylesheet" href="styles/cadastrar_equipamento.css">
 </head>
 
 <body>
@@ -37,29 +37,30 @@
         </div>
     </nav>
 
-    <div id="page-resultado">
+    <div id="page-cadastro">
         <form class="container">
-            <h1>SF241524</h1>
-            <div class="input-block">
-                <label for="equipamento">Equipamento:</label>
-                <input type="text" name="equipamento" id="equipamento" value="Notebook" disabled>
-            </div>
-            <div class="input-block">
-                <label for="marca">Marca:</label>
-                <input type="text" name="marca" id="marca" value="Daten" disabled>
-            </div>
-            <div class="input-block">
-                <label for="ua">UA:</label>
-                <input type="text" name="ua" id="ua" value="333423423- Milton" disabled>
-            </div>
-            <div class="input-block">
-                <label for="usuario">Usuário:</label>
-                <input type="text" name="usuario" id="usuario" value="cfomarques" disabled>
+            <h1>Cadastrar</h1>
+            <div class="campos">
+                <div class="input-block">
+                    <label for="equipamento">Patrimônio:</label>
+                    <input type="text" name="equipamento" id="equipamento" value="Notebook" required>
+                </div>
+                <div class="input-block">
+                    <label for="marca">Marca:</label>
+                    <input type="text" name="marca" id="marca" value="Daten">
+                </div>
+                <div class="input-block">
+                    <label for="ua">UA:</label>
+                    <input type="text" name="ua" id="ua" value="333423423- Milton">
+                </div>
+                <div class="input-block">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" name="usuario" id="usuario" value="cfomarques">
+                </div>
             </div>
             <footer>
-                <button>Editar</button>
+                <button type="submit">Cadastrar</button>
                 <button onclick="voltar()">Voltar</button>
-                <button class="desativar">desativar</button>
             </footer>
         </form>
     </div>

@@ -1,8 +1,8 @@
 const voltar = () => {
     event.preventDefault();
-    window.location.href = 'http://127.0.0.1:5500/pesquisar_equipamento.html';
+    window.location.href = 'pesquisar_equipamento.html';
 }
 const pesquisar = () => {
     event.preventDefault();
-    window.location.href = 'http://127.0.0.1:5500/resultado_pesquisa.html';
+    window.location.href = 'resultado_pesquisa.html';
 }
